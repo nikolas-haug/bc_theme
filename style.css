@@ -1432,6 +1432,14 @@ header {
 .row--nav-pad {
   padding: 2rem; }
 
+.site-tagline {
+  font-family: "Roboto Slab", serif;
+  font-size: 1.6rem;
+  font-weight: 400;
+  border-right: 2px solid #D7D9CE;
+  border-left: 2px solid #D7D9CE;
+  padding: 0 .5rem; }
+
 footer {
   background: #E0E0E0; }
 
@@ -1441,6 +1449,9 @@ footer {
 .footer__socials {
   background: #221E20;
   padding: 3.5rem 0; }
+
+.wpcf7-submit {
+  width: 100%; }
 
 .wp-block-image figure {
   margin-top: 2rem; }
@@ -1452,3 +1463,20 @@ footer {
     .wp-block-image .alignright img {
       width: 100%;
       height: auto; } }
+
+a.button--order-online {
+  padding: 4rem;
+  font-size: 5rem;
+  letter-spacing: .8px;
+  border: none;
+  background: royalblue;
+  transition: all .3s ease; }
+  a.button--order-online:hover {
+    border: none;
+    background: #839deb; }
+  a.button--order-online:active {
+    transform: translateY(-3px);
+    box-shadow: 0 2px 3px #000; }
+  @media (max-width: 750px) {
+    a.button--order-online {
+      font-size: 3.5rem; } }

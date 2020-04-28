@@ -1,3 +1,9 @@
+<?php 
+/*
+    Template Name: Order Online
+*/
+?>
+
 <!DOCTYPE html>
 <html lang="<?php language_attributes(); ?>">
     <head>
@@ -44,6 +50,11 @@
         <main>
             <div class="container-lg">
                 <div class="row">
+                    <div class="col-12">
+                        <a class="button full-button button--order-online">
+                            Order online
+                        </a>
+                    </div>
                     <?php if(is_front_page()) : ?>
                         <div class="col-med-12">
                             <h1 class="site-tagline text-center margin-bottom">independently owned and operated coffeehouse serving the Stevens Square neighborhood of Minneapolis

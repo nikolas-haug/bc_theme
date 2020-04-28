@@ -28,6 +28,15 @@ header {
   padding: 2rem;
 }
 
+.site-tagline {
+  font-family: $font-family-primary;
+  font-size: 1.6rem;
+  font-weight: 400;
+  border-right: 2px solid $color-grey;
+  border-left: 2px solid $color-grey;
+  padding: 0 .5rem;
+}
+
 footer {
   background: $color-tertiary;
 }
@@ -39,6 +48,11 @@ footer {
 .footer__socials {
   background: $color-secondary;
   padding: 3.5rem 0;
+}
+
+// Contact form
+.wpcf7-submit {
+  width: 100%;
 }
 
 // Gutenberg styles
@@ -56,3 +70,24 @@ footer {
       }
     }
   }
+
+// Order online button
+a.button--order-online {
+  padding: 4rem;
+  font-size: 5rem;
+  letter-spacing: .8px;
+  border: none;
+  background: royalblue;
+  transition: all .3s ease;
+  &:hover {
+    border: none;
+    background: lighten(royalblue, 15%);
+  }
+  &:active {
+    transform: translateY(-3px);
+    box-shadow: 0 2px 3px $color-black;
+  }
+  @media (max-width: $small) {
+    font-size: 3.5rem;
+  }
+}
