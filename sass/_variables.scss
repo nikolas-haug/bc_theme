@@ -21,7 +21,7 @@ $color-black: #000;
 $color-grey: #D7D9CE;
 
 $color-link: #3C2E37;
-$color-link-hover: lighten($color-link, 10%);
+$color-link-hover: lighten($color-link, 25%);
 
 // Buttons
 $accent-color: $color-primary;
@@ -149,7 +149,7 @@ $error: red;
 //======================================================
 
 $button-background-color: $color-primary;
-$button-background-hover: darken($button-background-color, 10%);
+$button-background-hover: lighten($button-background-color, 20%);
 $button-color: $color-white;
 $button-font-weight: 600;
 $button-font-family: 'Railroad Gothic W01';

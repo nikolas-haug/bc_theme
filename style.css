@@ -407,7 +407,7 @@ a {
   text-decoration: none;
   font-family: "Railroad Gothic W01"; }
   a:hover, a:active, a:focus {
-    color: #594451;
+    color: #846579;
     text-decoration: underline; }
 
 /** 
@@ -580,7 +580,7 @@ a {
   transition: all 0.3s; }
 
 .slider-menu ul li a:hover {
-  color: #594451; }
+  color: #846579; }
 
 /* 
  * MEDIA QUERIES - Mobile view
@@ -638,7 +638,7 @@ blockquote {
 
 .button:hover, a.button:hover, button:hover, [type=submit]:hover, [type=reset]:hover, [type=button]:hover {
   border: 1px solid rgba(0, 0, 0, 0.7);
-  background: rgba(0, 0, 0, 0.7);
+  background: rgba(51, 51, 51, 0.7);
   color: #fff;
   text-decoration: none; }
 
@@ -1444,11 +1444,23 @@ footer {
   background: #E0E0E0; }
 
 .footer-widget {
-  padding: 2rem; }
+  padding: 2rem;
+  text-align: center; }
 
 .footer__socials {
   background: #221E20;
   padding: 3.5rem 0; }
+
+.footer__icon {
+  padding: 0 1rem;
+  margin-bottom: 1rem;
+  color: tomato;
+  transition: all .3s; }
+  .footer__icon:hover {
+    color: #ffa494; }
+
+.footer__copyright {
+  color: #fff; }
 
 .wpcf7-submit {
   width: 100%; }
@@ -1469,14 +1481,14 @@ a.button--order-online {
   font-size: 5rem;
   letter-spacing: .8px;
   border: none;
-  background: royalblue;
-  transition: all .3s ease; }
+  background: #41658A;
+  transition: all .2s ease; }
   a.button--order-online:hover {
     border: none;
-    background: #839deb; }
+    background: #628bb5; }
   a.button--order-online:active {
-    transform: translateY(-3px);
-    box-shadow: 0 2px 3px #000; }
+    transform: translateY(-2px);
+    box-shadow: 0 2px 2px #000; }
   @media (max-width: 750px) {
     a.button--order-online {
       font-size: 3.5rem; } }

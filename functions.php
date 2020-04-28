@@ -13,7 +13,7 @@ include( get_theme_file_path( '/includes/theme-customizer.php' ));
 add_action( 'wp_enqueue_scripts', 'boiler_room_enqueue' );
 add_action( 'after_setup_theme', 'boiler_room_setup_theme' );
 add_action( 'widgets_init', 'boiler_room_widgets' );
-add_action( 'customize_register', 'boiler_room_cusotomize_register' );
+add_action( 'customize_register', 'boiler_room_customize_register' );
 
 // Shortcodes
 

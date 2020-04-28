@@ -43,11 +43,26 @@ footer {
 
 .footer-widget {
   padding: 2rem;
+  text-align: center;
 }
 
 .footer__socials {
   background: $color-secondary;
   padding: 3.5rem 0;
+}
+
+.footer__icon {
+  padding: 0 1rem;
+  margin-bottom: 1rem;
+  color: tomato;
+  transition: all .3s;
+  &:hover {
+    color: lighten(tomato, 15%);
+  }
+}
+
+.footer__copyright {
+  color: $color-white;
 }
 
 // Contact form
@@ -77,15 +92,15 @@ a.button--order-online {
   font-size: 5rem;
   letter-spacing: .8px;
   border: none;
-  background: royalblue;
-  transition: all .3s ease;
+  background: #41658A;
+  transition: all .2s ease;
   &:hover {
     border: none;
-    background: lighten(royalblue, 15%);
+    background: lighten(#41658A, 15%);
   }
   &:active {
-    transform: translateY(-3px);
-    box-shadow: 0 2px 3px $color-black;
+    transform: translateY(-2px);
+    box-shadow: 0 2px 2px $color-black;
   }
   @media (max-width: $small) {
     font-size: 3.5rem;
