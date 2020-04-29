@@ -11,11 +11,19 @@
     src:url("Fonts/706873/42650c0f-824e-4917-8df4-7e53880ebb65_.eot#iefix") format("eot"),url("Fonts/706873/c2134680-ae29-4384-a0f2-71a00ca66e73.woff2") format("woff2"),url("Fonts/706873/e1a2c994-15ae-4b49-88e9-c8667b067643.woff") format("woff"),url("Fonts/706873/beab2e5b-9909-41b2-95dd-f250fcfe6855.ttf") format("truetype"); 
 }
 
+* {
+  // border: solid 1px red !important;
+}
+
 body {
-  transition: background .3s; 
+  transition: background .3s;
 }
 
 body.dimmed {
+  background: rgba(0, 0, 0, 0.85);
+}
+
+body.custom-background.dimmed {
   background: rgba(0, 0, 0, 0.85);
 }
 
@@ -54,10 +62,10 @@ footer {
 .footer__icon {
   padding: 0 1rem;
   margin-bottom: 1rem;
-  color: tomato;
+  color: $color-quaternary;
   transition: all .3s;
   &:hover {
-    color: lighten(tomato, 15%);
+    color: lighten($color-quaternary, 15%);
   }
 }
 
@@ -92,11 +100,11 @@ a.button--order-online {
   font-size: 5rem;
   letter-spacing: .8px;
   border: none;
-  background: #41658A;
+  background: $color-quaternary;
   transition: all .2s ease;
   &:hover {
     border: none;
-    background: lighten(#41658A, 15%);
+    background: lighten($color-quaternary, 15%);
   }
   &:active {
     transform: translateY(-2px);

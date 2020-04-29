@@ -9,7 +9,7 @@
     </head>
     <body <?php body_class();?>>
 
-        <div class="scroll-top-btn"></div>
+        <!-- <div class="scroll-top-btn"></div> -->
 
         <header>
             <div class="container-lg">
