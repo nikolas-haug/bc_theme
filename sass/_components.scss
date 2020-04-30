@@ -132,10 +132,9 @@
   .slider-menu__toggler {
     display: flex;
   }
-  body {
-    // Need to adjust this according to collapsed menu size/padding
-    margin-top: calc(#{$mobile-navbar-padding} * 2.5);
-  }
+  // body {
+  //   margin-top: calc(#{$mobile-navbar-padding} * 2.5);
+  // }
 }
 
 //===================================================

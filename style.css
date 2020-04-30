@@ -516,9 +516,7 @@ a {
   .slider-menu ul li a {
     font-size: 2rem; }
   .slider-menu__toggler {
-    display: flex; }
-  body {
-    margin-top: calc(1.5rem * 2.5); } }
+    display: flex; } }
 
 blockquote {
   background: transparent;
@@ -1353,7 +1351,7 @@ header {
   margin-bottom: 2rem; }
 
 .row--nav-pad {
-  padding: 2rem; }
+  padding: 1.5rem; }
 
 .site-tagline {
   font-family: "Roboto Slab", serif;

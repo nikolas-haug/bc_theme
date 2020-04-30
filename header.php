@@ -14,7 +14,7 @@
         <header>
             <div class="container-lg">
                 <div class="row row--nav-pad">
-                    <div class="col-12 col-med-4 dis-flex">
+                    <div class="col-10 col-med-4 dis-flex">
                         <h1 class="align-self-center text-center">
 
                             <a href="<?php echo esc_url(site_url('/')); ?>">
