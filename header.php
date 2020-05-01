@@ -30,7 +30,7 @@
                             </a>
                         </h1>
                     </div>
-                    <div class="col-med-8">
+                    <div class="col-2 col-med-8">
                         <nav class="slider-menu">
                             <?php wp_nav_menu(array(
                                 'theme_location' => 'primary',
