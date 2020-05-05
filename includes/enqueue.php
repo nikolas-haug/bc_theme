@@ -21,9 +21,9 @@ function boiler_room_enqueue() {
 
     // SCRIPTS
     wp_register_script( 'navigation_js', $uri . '/js/slider-nav.js', [], $ver, true );
-    // wp_register_script( 'scroll_js', $uri . '/js/scroll.js', [], $ver, true );
+    wp_register_script( 'scroll_js', $uri . '/js/scroll.js', [], $ver, true );
 
     wp_enqueue_script( 'jquery' );
     wp_enqueue_script( 'navigation_js' );
-    // wp_enqueue_script( 'scroll_js' );
+    wp_enqueue_script( 'scroll_js' );
 }
