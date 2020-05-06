@@ -96,3 +96,9 @@ a {
         text-decoration: underline;
     }
 }
+
+// Selection
+::selection {
+    background-color: $color-primary; 
+    color: $color-white;
+}

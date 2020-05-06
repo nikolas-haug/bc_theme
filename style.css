@@ -410,6 +410,10 @@ a {
     color: #846579;
     text-decoration: underline; }
 
+::selection {
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #fff; }
+
 /** 
 *
 * COMPONENTS
@@ -724,15 +728,15 @@ textarea.is-success:active {
 */
 .container {
   width: 100%;
-  padding-right: .5rem;
-  padding-left: .5rem;
+  padding-right: 1.5rem;
+  padding-left: 1.5rem;
   margin-right: auto;
   margin-left: auto; }
 
 .container-full {
   width: 100%;
-  padding-right: .5rem;
-  padding-left: .5rem;
+  padding-right: 1.5rem;
+  padding-left: 1.5rem;
   margin-right: auto;
   margin-left: auto; }
 
@@ -746,24 +750,24 @@ textarea.is-success:active {
 .container-sm {
   max-width: calc(480px * 0.95);
   width: 100%;
-  padding-right: .5rem;
-  padding-left: .5rem;
+  padding-right: 1.5rem;
+  padding-left: 1.5rem;
   margin-right: auto;
   margin-left: auto; }
 
 .container-med {
   max-width: calc(750px * 0.95);
   width: 100%;
-  padding-right: .5rem;
-  padding-left: .5rem;
+  padding-right: 1.5rem;
+  padding-left: 1.5rem;
   margin-right: auto;
   margin-left: auto; }
 
 .container-lg {
   max-width: calc(1100px * 0.95);
   width: 100%;
-  padding-right: .5rem;
-  padding-left: .5rem;
+  padding-right: 1.5rem;
+  padding-left: 1.5rem;
   margin-right: auto;
   margin-left: auto; }
 
@@ -788,8 +792,8 @@ textarea.is-success:active {
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  margin-right: -0.5rem;
-  margin-left: -0.5rem; }
+  margin-right: -1.5rem;
+  margin-left: -1.5rem; }
 
 .row-gallery {
   max-height: 2rem;
