@@ -14,21 +14,18 @@
         <header>
             <div class="container-lg">
                 <div class="row row--nav-pad">
-                    <div class="col-10 col-med-4 dis-flex">
-                        <!-- <h1 class="align-self-center text-center"> -->
-
+                    <div class="col-10 col-med-4 dis-flex align-items-center">
                             <a href="<?php echo esc_url(site_url('/')); ?>">
-                                    <?php
-                                        $custom_logo_id = get_theme_mod('custom_logo');
-                                        $logo = wp_get_attachment_image_src($custom_logo_id, 'full');
-                                        if (has_custom_logo()) {
-                                            echo '<img src="' . esc_url($logo[0]) . '" alt="' . get_bloginfo('name') . '" class="img-100 dis-block text-center">';
-                                        } else {
-                                            echo '<h1>' . get_bloginfo('name') . '</h1>';
-                                        }
-                                    ?>
+                                <?php
+                                    $custom_logo_id = get_theme_mod('custom_logo');
+                                    $logo = wp_get_attachment_image_src($custom_logo_id, 'full');
+                                    if (has_custom_logo()) {
+                                        echo '<img src="' . esc_url($logo[0]) . '" alt="' . get_bloginfo('name') . '" class="img-100 dis-block text-center">';
+                                    } else {
+                                        echo '<h1>' . get_bloginfo('name') . '</h1>';
+                                    }
+                                ?>
                             </a>
-                        <!-- </h1> -->
                     </div>
                     <div class="col-2 col-med-8">
                         <nav class="slider-menu">

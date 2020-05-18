@@ -424,7 +424,7 @@ a {
  */
 .slider-menu__toggler {
   position: relative;
-  z-index: 999;
+  z-index: 100;
   height: 100%;
   width: 100%;
   cursor: pointer;
@@ -440,21 +440,13 @@ a {
   width: 28px;
   height: 2.5px;
   background: #221E20;
-  border-radius: 20px;
-  transition: 0.1s; }
+  border-radius: 20px; }
 
 .slider-menu__toggler span::before {
   top: -8px; }
 
 .slider-menu__toggler span::after {
   top: 8px; }
-
-.slider-menu__toggler.active > span {
-  background: transparent; }
-
-.slider-menu__toggler.active > span::before,
-.slider-menu__toggler.active > span::after {
-  background: transparent; }
 
 /*
   * SLIDING MENU PANEL - Desktop view
@@ -501,13 +493,6 @@ a {
     z-index: 998;
     height: 100%;
     /* overflow: scroll; */ }
-  .slider-menu__close {
-    position: absolute;
-    top: .5rem;
-    left: .5rem;
-    width: 10px;
-    height: 3px;
-    background: blue; }
   .slider-menu::before {
     transform: rotate(45deg) scale(0); }
   .slider-menu::after {
@@ -728,15 +713,15 @@ textarea.is-success:active {
 */
 .container {
   width: 100%;
-  padding-right: 1.5rem;
-  padding-left: 1.5rem;
+  padding-right: .5rem;
+  padding-left: .5rem;
   margin-right: auto;
   margin-left: auto; }
 
 .container-full {
   width: 100%;
-  padding-right: 1.5rem;
-  padding-left: 1.5rem;
+  padding-right: .5rem;
+  padding-left: .5rem;
   margin-right: auto;
   margin-left: auto; }
 
@@ -750,24 +735,24 @@ textarea.is-success:active {
 .container-sm {
   max-width: calc(480px * 0.95);
   width: 100%;
-  padding-right: 1.5rem;
-  padding-left: 1.5rem;
+  padding-right: .5rem;
+  padding-left: .5rem;
   margin-right: auto;
   margin-left: auto; }
 
 .container-med {
   max-width: calc(750px * 0.95);
   width: 100%;
-  padding-right: 1.5rem;
-  padding-left: 1.5rem;
+  padding-right: .5rem;
+  padding-left: .5rem;
   margin-right: auto;
   margin-left: auto; }
 
 .container-lg {
   max-width: calc(1100px * 0.95);
   width: 100%;
-  padding-right: 1.5rem;
-  padding-left: 1.5rem;
+  padding-right: .5rem;
+  padding-left: .5rem;
   margin-right: auto;
   margin-left: auto; }
 
@@ -792,8 +777,8 @@ textarea.is-success:active {
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  margin-right: -1.5rem;
-  margin-left: -1.5rem; }
+  margin-right: -0.5rem;
+  margin-left: -0.5rem; }
 
 .row-gallery {
   max-height: 2rem;
@@ -1284,6 +1269,9 @@ textarea.is-success:active {
 .justify-content-around {
   justify-content: space-around; }
 
+.align-items-center {
+  align-items: center; }
+
 .center-align {
   display: flex;
   justify-content: center;
@@ -1352,7 +1340,7 @@ header {
   margin-bottom: 2rem; }
 
 .row--nav-pad {
-  padding: 1.5rem; }
+  padding: 1.5rem 0; }
 
 .site-tagline {
   font-family: "Roboto Slab", serif;
