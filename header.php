@@ -15,7 +15,7 @@
             <div class="container-lg">
                 <div class="row row--nav-pad">
                     <div class="col-10 col-med-4 dis-flex">
-                        <h1 class="align-self-center text-center">
+                        <!-- <h1 class="align-self-center text-center"> -->
 
                             <a href="<?php echo esc_url(site_url('/')); ?>">
                                     <?php
@@ -28,7 +28,7 @@
                                         }
                                     ?>
                             </a>
-                        </h1>
+                        <!-- </h1> -->
                     </div>
                     <div class="col-2 col-med-8">
                         <nav class="slider-menu">
