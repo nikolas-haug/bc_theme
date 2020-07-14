@@ -24,6 +24,10 @@
     display: inline-block;
 }
 
+.dis-flex {
+    display: flex;
+}
+
 // Display state
 .show {
     display: block;
@@ -200,6 +204,10 @@
 
 .align-self-center {
     align-self: center;
+}
+
+.align-items-center {
+    align-items: center;
 }
 
 .center-align {

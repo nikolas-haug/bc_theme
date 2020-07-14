@@ -12,29 +12,29 @@
 // CONFIG
 //====================================================
 
-@import "backup_sass/sass/variables";
-@import "backup_sass/sass/mixins";
+@import "src/variables";
+@import "src/mixins";
 
 
 //====================================================
 // RESET
 //====================================================
 
-@import "backup_sass/sass/normalize";
-@import "backup_sass/sass/reset";
-@import "backup_sass/sass/base";
+@import "src/normalize";
+@import "src/reset";
+@import "src/base";
 
 
 //====================================================
 // COMPONENTS
 //====================================================
 
-@import "backup_sass/sass/components";
-@import "backup_sass/sass/layout";
-@import "backup_sass/sass/utilities";
+@import "src/components";
+@import "src/layout";
+@import "src/utilities";
 
 //====================================================
 // CUSTOM STYLES
 //====================================================
 
-@import "backup_sass/sass/custom";
+@import "src/custom";
