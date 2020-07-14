@@ -1,0 +1,116 @@
+/**
+*
+* THEME SPECIFIC COMPONENTS
+*
+*/
+
+// Fonts
+@font-face{
+  font-family:"Railroad Gothic W01";
+  src:url("Fonts/706873/42650c0f-824e-4917-8df4-7e53880ebb65_.eot#iefix");
+  src:url("Fonts/706873/42650c0f-824e-4917-8df4-7e53880ebb65_.eot#iefix") format("eot"),url("Fonts/706873/c2134680-ae29-4384-a0f2-71a00ca66e73.woff2") format("woff2"),url("Fonts/706873/e1a2c994-15ae-4b49-88e9-c8667b067643.woff") format("woff"),url("Fonts/706873/beab2e5b-9909-41b2-95dd-f250fcfe6855.ttf") format("truetype"); 
+}
+
+* {
+// border: solid 1px red !important;
+}
+
+body {
+transition: background .3s;
+}
+
+body.dimmed {
+background: rgba(0, 0, 0, 0.85);
+}
+
+body.custom-background.dimmed {
+background: rgba(0, 0, 0, 0.85);
+}
+
+header {
+border-bottom: 1px solid $color-grey;
+margin-bottom: 2rem;
+}
+
+.row--nav-pad {
+padding: 1.5rem 0;
+}
+
+.site-tagline {
+font-family: $font-family-primary;
+font-size: 1.6rem;
+font-weight: 400;
+border-right: 2px solid $color-grey;
+border-left: 2px solid $color-grey;
+padding: 0 .5rem;
+}
+
+footer {
+background: $color-tertiary;
+}
+
+.footer-widget {
+padding: 2rem;
+text-align: center;
+}
+
+.footer__socials {
+background: $color-secondary;
+padding: 3.5rem 0;
+}
+
+.footer__icon {
+padding: 0 1rem;
+margin-bottom: 1rem;
+color: $color-quaternary;
+transition: all .3s;
+&:hover {
+  color: lighten($color-quaternary, 15%);
+}
+}
+
+.footer__copyright {
+color: $color-white;
+}
+
+// Contact form
+.wpcf7-submit {
+width: 100%;
+}
+
+// Gutenberg styles
+.wp-block-image figure {
+  margin-top: 2rem;
+}
+
+@media (max-width: 650px) {
+  .wp-block-image .alignright {
+    float: none;
+    margin: 0;
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+}
+
+// Order online button
+a.button--order-online {
+padding: 4rem;
+font-size: 5rem;
+letter-spacing: .8px;
+border: none;
+background: $color-quaternary;
+transition: all .2s ease;
+&:hover {
+  border: none;
+  background: lighten($color-quaternary, 15%);
+}
+&:active {
+  transform: translateY(-2px);
+  box-shadow: 0 2px 2px $color-black;
+}
+@media (max-width: $small) {
+  font-size: 3.5rem;
+}
+}
