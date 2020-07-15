@@ -55,20 +55,19 @@
 }
 // Add the animation when clicked to hamburger
 .slider-menu__toggler.active > span {
-  // background: transparent;
+  background: transparent;
 }
 .slider-menu__toggler.active > span::before,
 .slider-menu__toggler.active > span::after {
-  // background: lighten($color-secondary, 15%);
-  // top: 0px;
-  // background: transparent;
+  background: lighten($color-secondary, 15%);
+  top: 0px;
 }
-// .slider-menu__toggler.active > span::before {
-//   transform: rotate(-225deg);
-// }
-// .slider-menu__toggler.active > span::after {
-//   transform: rotate(225deg);
-// }
+.slider-menu__toggler.active > span::before {
+  transform: rotate(-225deg);
+}
+.slider-menu__toggler.active > span::after {
+  transform: rotate(225deg);
+}
 
 /*
   * SLIDING MENU PANEL - Desktop view
@@ -118,38 +117,31 @@
     height: 100%;
     /* overflow: scroll; */
   }
-  // .slider-menu__close {
-  //   position: absolute;
-  //   top: .5rem;
-  //   left: .5rem;
-  //   width: 10px;
-  //   height: 3px;
-  //   background: blue;
-  // }
   // .slider-menu::before,
   // .slider-menu::after {
   //   content: '';
   //   display: block;
   //   position: absolute;
   //   top: 40px;
+  //   right: 40px;
   //   width: 28px;
   //   height: 2.5px;
   //   background: $color-secondary;
   //   transition: .2s;
   //   transition-delay: .1s;
   // }
-  .slider-menu::before {
-    transform: rotate(45deg) scale(0);
-  }
-  .slider-menu::after {
-    transform: rotate(-45deg) scale(0);
-  }
-  .slider-menu.active::before {
-    transform: rotate(45deg) scale(1);
-  }
-  .slider-menu.active::after {
-    transform: rotate(-45deg) scale(1);
-  }
+  // .slider-menu::before {
+  //   transform: rotate(45deg) scale(0);
+  // }
+  // .slider-menu::after {
+  //   transform: rotate(-45deg) scale(0);
+  // }
+  // .slider-menu.active::before {
+  //   transform: rotate(45deg) scale(1);
+  // }
+  // .slider-menu.active::after {
+  //   transform: rotate(-45deg) scale(1);
+  // }
   .slider-menu ul {
     flex-direction: column;
   }

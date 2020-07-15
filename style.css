@@ -448,6 +448,20 @@ a {
 .slider-menu__toggler span::after {
   top: 8px; }
 
+.slider-menu__toggler.active > span {
+  background: transparent; }
+
+.slider-menu__toggler.active > span::before,
+.slider-menu__toggler.active > span::after {
+  background: #4b4246;
+  top: 0px; }
+
+.slider-menu__toggler.active > span::before {
+  transform: rotate(-225deg); }
+
+.slider-menu__toggler.active > span::after {
+  transform: rotate(225deg); }
+
 /*
   * SLIDING MENU PANEL - Desktop view
   */
@@ -493,14 +507,6 @@ a {
     z-index: 998;
     height: 100%;
     /* overflow: scroll; */ }
-  .slider-menu::before {
-    transform: rotate(45deg) scale(0); }
-  .slider-menu::after {
-    transform: rotate(-45deg) scale(0); }
-  .slider-menu.active::before {
-    transform: rotate(45deg) scale(1); }
-  .slider-menu.active::after {
-    transform: rotate(-45deg) scale(1); }
   .slider-menu ul {
     flex-direction: column; }
   .slider-menu ul li a {

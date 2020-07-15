@@ -32,7 +32,6 @@
                             <?php wp_nav_menu(array(
                                 'theme_location' => 'primary',
                             ));?>
-                            <span class="slider-menu__close"></span>
                         </nav>
                         <div class="slider-menu__toggler"><span></span></div>
                     </div>
