@@ -8,39 +8,6 @@
 // COLOR
 //=====================================================
 
-// Github color palette
-// $color-light: #C7E48B;
-// $color-med: #7BC96F;
-// $color-dark: #209B3A;
-// $color-grey: #EAEDF0;
-
-// Grayscale first design palette
-// $color-primary: #ccc;
-// $color-secondary: #999;
-$color-primary: #209B3A;
-$color-secondary: #7BC96F;
-// $color-secondary: #31E858;
-$color-tertiary: #E8E51A;
-// $color-yellow: #C7E48B;
-
-$color-grey-dark: #38453b;
-$color-grey-light: #f9faf9;
-// $color-grey-dark: #4c4c4c;
-// $color-grey-light: #dedede;
-
-// Basic
-$color-white: #fff;
-$color-black: #101010;
-
-$color-link: $color-secondary;
-$color-link-hover: darken($color-link, 10%);
-
-// Global
-$global-background-color: $color-grey-light;
-
-// Buttons
-$accent-color: $color-primary;
-
 // Global
 $global-background-color: #FBFCFD;
 
@@ -54,6 +21,9 @@ $color-white: #fff;
 $color-black: #000;
 $color-grey: #D7D9CE;
 
+$color-grey-dark: #38453b;
+$color-grey-light: #f9faf9;
+
 $color-link: #3C2E37;
 $color-link-hover: lighten($color-link, 25%);
 
@@ -63,15 +33,6 @@ $accent-color: $color-primary;
 //=====================================================
 // CONTAINERS
 //=====================================================
-
-// (Media query ~ breakpoints)
-// 0 - 600px        :     Phone
-// 600 - 900px      :     Tablet portrait
-// 900 - 1200px     :     Tablet landscape
-// 1200 - 1800px    :     ~ Desktop 
-// 1800px +         :     Large desktop
-
-// Convert to em for accessible media queries (px / 16)
 
 $x-small: 480px;
 $small: 850px;
@@ -87,7 +48,6 @@ $container-gutter: 0.95;
 
 // Controls the number of columns for the layout
 $grid-columns: 12;
-// $grid-column-padding: 1.5rem;
 
 // General variable for all containers, rows, and columns
 $grid-padding: 1.5rem;
@@ -97,9 +57,6 @@ $grid-column-padding-custom: .5rem;
 
 // Rows
 $row-gallery-height: 20rem;
-
-// Container padding (negative for row margins)
-// $container-padding: 1.5rem;
 
 //=====================================================
 // TYPOGRAPHY
