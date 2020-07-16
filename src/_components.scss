@@ -5,34 +5,28 @@
 */
 
 //===================================================
-// Secondary nav (built for wordpress dynamic menus)
+// Slider Menu Component
 //
-// <div class="container-lg">
-//   <div class="row">
-//       <div class="col-12">
-//           <nav class="slider-menu">
-//              WP MENU BELOW
-//               <ul>
-//                   <li><a href="index.html">Welcome</a></li>
-//               </ul>
-//              END WP MENU
-//           </nav>
-//           <div class="slider-menu__toggler"><span></span></div>
-//       </div>
-//   </div>
-// </div>
+//  <nav class="slider-menu">
+//     WP MENU BELOW
+//      <ul>
+//          <li><a href="index.html">Welcome</a></li>
+//      </ul>
+//     END WP MENU
+//  </nav>
+//  <div class="slider-menu__toggler"><span></span></div>
 //
 //===================================================
 /*
  * MENU BUTTON
  */
- .slider-menu__toggler {
+.slider-menu__toggler {
   position: relative;
-  z-index: 100;
+  z-index: 999;
   height: 100%;
   width: 100%;
   cursor: pointer;
-  display: none;
+  display: none; // hide on larger viewport
   align-items: center;
   justify-content: center;
 }
@@ -45,7 +39,7 @@
   height: 2.5px;
   background: $color-secondary;
   border-radius: 20px;
-  // transition: 0.1s;
+  transition: all .5s;
 }
 .slider-menu__toggler span::before {
   top: -8px;
@@ -53,8 +47,9 @@
 .slider-menu__toggler span::after {
   top: 8px;
 }
-// Add the animation when clicked to hamburger
+// active menu classes
 .slider-menu__toggler.active > span {
+  position: fixed;
   background: transparent;
 }
 .slider-menu__toggler.active > span::before,
@@ -68,10 +63,9 @@
 .slider-menu__toggler.active > span::after {
   transform: rotate(225deg);
 }
-
 /*
   * SLIDING MENU PANEL - Desktop view
-  */
+*/
 .slider-menu {
   height: 100%;
   background: $global-background-color;
@@ -101,47 +95,20 @@
   color: $color-link-hover;
 }
 /* 
- * MEDIA QUERIES - Mobile view
+ * MEDIA QUERIES - Adjust query max-width according to logo/branding size in nav
 */
 @media only screen and (max-width: $small) {
   .slider-menu {
-    width: 250px;
-    right: -250px;
+    width: 25rem;
+    right: -25rem;
     padding: 5rem 0 0 3.5rem;
   }
   .slider-menu {
     position: fixed;
     top: 0;
     z-index: 998;
-    // clip-path: polygon(0 0, 100% 0, 85% 100%, 0% 100%);
     height: 100%;
-    /* overflow: scroll; */
   }
-  // .slider-menu::before,
-  // .slider-menu::after {
-  //   content: '';
-  //   display: block;
-  //   position: absolute;
-  //   top: 40px;
-  //   right: 40px;
-  //   width: 28px;
-  //   height: 2.5px;
-  //   background: $color-secondary;
-  //   transition: .2s;
-  //   transition-delay: .1s;
-  // }
-  // .slider-menu::before {
-  //   transform: rotate(45deg) scale(0);
-  // }
-  // .slider-menu::after {
-  //   transform: rotate(-45deg) scale(0);
-  // }
-  // .slider-menu.active::before {
-  //   transform: rotate(45deg) scale(1);
-  // }
-  // .slider-menu.active::after {
-  //   transform: rotate(-45deg) scale(1);
-  // }
   .slider-menu ul {
     flex-direction: column;
   }
@@ -151,9 +118,6 @@
   .slider-menu__toggler {
     display: flex;
   }
-  // body {
-  //   margin-top: calc(#{$mobile-navbar-padding} * 2.5);
-  // }
 }
 
 //===================================================

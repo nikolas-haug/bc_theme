@@ -424,7 +424,7 @@ a {
  */
 .slider-menu__toggler {
   position: relative;
-  z-index: 100;
+  z-index: 999;
   height: 100%;
   width: 100%;
   cursor: pointer;
@@ -440,7 +440,8 @@ a {
   width: 28px;
   height: 2.5px;
   background: #221E20;
-  border-radius: 20px; }
+  border-radius: 20px;
+  transition: all .5s; }
 
 .slider-menu__toggler span::before {
   top: -8px; }
@@ -449,6 +450,7 @@ a {
   top: 8px; }
 
 .slider-menu__toggler.active > span {
+  position: fixed;
   background: transparent; }
 
 .slider-menu__toggler.active > span::before,
@@ -464,7 +466,7 @@ a {
 
 /*
   * SLIDING MENU PANEL - Desktop view
-  */
+*/
 .slider-menu {
   height: 100%;
   background: #FBFCFD;
@@ -494,19 +496,18 @@ a {
   color: #846579; }
 
 /* 
- * MEDIA QUERIES - Mobile view
+ * MEDIA QUERIES - Adjust query max-width according to logo/branding size in nav
 */
 @media only screen and (max-width: 850px) {
   .slider-menu {
-    width: 250px;
-    right: -250px;
+    width: 25rem;
+    right: -25rem;
     padding: 5rem 0 0 3.5rem; }
   .slider-menu {
     position: fixed;
     top: 0;
     z-index: 998;
-    height: 100%;
-    /* overflow: scroll; */ }
+    height: 100%; }
   .slider-menu ul {
     flex-direction: column; }
   .slider-menu ul li a {
